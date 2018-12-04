@@ -19,7 +19,6 @@ import com.amazon.ask.Skills;
 import com.moneysupermarket.alexa.handlers.CancelandStopIntentHandler;
 import com.moneysupermarket.alexa.handlers.CarMotIntentHandler;
 import com.moneysupermarket.alexa.handlers.FallbackIntentHandler;
-import com.moneysupermarket.alexa.handlers.HelloWorldIntentHandler;
 import com.moneysupermarket.alexa.handlers.HelpIntentHandler;
 import com.moneysupermarket.alexa.handlers.LaunchRequestHandler;
 import com.moneysupermarket.alexa.handlers.MyCarMotIntentHandler;
@@ -31,7 +30,6 @@ public class MSMStreamHandler extends SkillStreamHandler {
         return Skills.standard()
             .addRequestHandlers(
                 new CancelandStopIntentHandler(),
-                new HelloWorldIntentHandler(),
                 new HelpIntentHandler(),
                 new LaunchRequestHandler(),
                 new SessionEndedRequestHandler(),
